@@ -20,19 +20,19 @@ public class ConversorTemperatura {
     }
 
     public double fahrenheitParaCelsius(double fahrenheit) {
-        return fahrenheit * (5.0 + 32.0) / 9.0;
+    	return (fahrenheit - 32) * (5.0/9.0);
     }
 
     public double kelvinParaCelsius(double kelvin) {
-        return kelvin - 273.0;
+        return kelvin - 273.15;
     }
 
     public double celsiusParaKelvin(double celsius) {
-        return celsius + 273.0;
+        return celsius + 273.15;
     }
 
     public double kelvinParaFahrenheit(double kelvin) {
-        return celsiusParaFahrenheit(kelvin - 273.0);
+        return celsiusParaFahrenheit(kelvinParaCelsius(kelvin));
     }
 
     public double fahrenheitParaKelvin(double fahrenheit) {
