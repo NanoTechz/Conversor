@@ -51,6 +51,7 @@ public class Main {
 					break;
 				default :
 					System.out.println("Opcão inválida.");
+					valorTemperatura = -1;
 			}
 		} catch (NumberFormatException e) {
 			System.out.println("Erro na conversão da string em número.");
