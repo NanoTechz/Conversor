@@ -16,17 +16,9 @@ public class ConversorTemperaturaTest {
 	public void setUp() throws Exception {
 		conversor = new ConversorTemperatura();
 	}
-
-	@Test
-	public void celsiusParaFahrenheitTest() {
-		assertEquals(104, conversor.celsiusParaFahrenheit());
-	}
 	
 	@Test
 	public void celsiusParaFahrenheitComParametroTest() {
-		//teste passando um inteiro
-		assertEquals(104, conversor.celsiusParaFahrenheit(40));
-		//teste passando um double
 		assertEquals(104.0, conversor.celsiusParaFahrenheit(40.0), MARGEM_ERRO);
 	}
 	

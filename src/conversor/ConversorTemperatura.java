@@ -7,14 +7,6 @@ package conversor;
 
 public class ConversorTemperatura {
 
-    public int celsiusParaFahrenheit() {
-        return (9 * 40) / 5 + 32;
-    }
-
-    public int celsiusParaFahrenheit(int celsius) {
-        return (9 * celsius) / 5 + 32;
-    }
-
     public double celsiusParaFahrenheit(double celsius) {
         return (9.0 * celsius) / 5.0 + 32.0;
     }
